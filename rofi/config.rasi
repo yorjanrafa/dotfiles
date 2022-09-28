@@ -1,0 +1,86 @@
+configuration {  
+	modi:			    "drun";
+	font:				"Arial 11";
+	display-drun: 		"";
+	drun-display-format:"{name}";
+	sidebar-mode:       false;
+	show-icons:         true;
+	sidebar-mode:    	false;
+    fullscreen:         true;
+}
+
+@theme "/dev/null"
+
+* {
+	bg:   				#21232F;
+	fg:			    	#d9d7d6;
+	button:		       	rgba(160,217,255,0.2);
+	background-color:	@bg;
+	text-color:			@fg;
+}
+
+window {
+	transparency:                   "real";
+	width:			            	60%;
+	border-radius:                  0px;
+	fullscreen:                     true;
+}
+
+prompt { enabled: false; 
+
+}
+
+entry {
+	placeholder:		        	"Search";
+	placeholder-color:              @fg;
+	expand:                         true;
+	padding:                        2%;
+	border-radius:		        	8px;
+	background-color:	            rgba(33,35,47,0.8);
+    border-color:                   rgba(122, 200, 215, 0.6);
+    border: 1px;
+}
+
+inputbar {
+	children: 			            [ prompt, entry ];
+	background-image:               url("img/bg.png");
+	expand:                         false;
+	border-radius:                  0px 0 8px 8px;
+	padding:                        100px 30px 30px 300px;
+}
+
+listview {
+	columns:                        4;
+	lines:	                        4;
+	cycle:                          false;
+	dynamic:                        true;
+	layout:                         vertical;
+	padding:		             	30px 30px 30px 30px;
+}
+
+mainbox { children: [ inputbar, listview ]; }
+
+element {
+	orientation:                    horizontal;
+	padding:                        1.5% 0% 1.5% 0%;
+	border-radius:		         	8px;
+}
+
+element-text {
+	expand:                         true;
+	vertical-align:                 0.5;
+	margin:                         0.5% 0% 0% 0%;
+	background-color: 	        	rgba(0,0,0,0);
+	text-color:             		inherit;
+}  
+
+element-icon {
+    size:                           30px;
+   background-color: 	        	rgba(0,0,0,0);
+    border:                         0px;
+    margin:                         0px 10px 0px 10px;
+}
+element selected {
+	background-color:               @button;
+	border-radius:                  8px;
+}
