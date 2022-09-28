@@ -82,5 +82,5 @@ element-icon {
 }
 element selected {
 	background-color:               @button;
-	border-radius:                  8px;
+	border-radius:                  7px;
 }
