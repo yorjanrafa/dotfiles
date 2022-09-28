@@ -1,3 +1,8 @@
+/*
+* Author: Yorjan Sandoval
+* Mail: yorjan1999sandoval@gmail.com
+*/
+
 configuration {  
 	modi:			    "drun";
 	font:				"Arial 11";
